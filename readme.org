@@ -1,0 +1,17 @@
+* The Lion Queen Personality Quiz
+
+A command-line personality quiz for my daughter's play, The Lion Queen, which is a queer feminist retelling of The Lion King.
+
+** Installing And Running
+*** Pre-requisites
+1. Git
+2. Node
+3. A willingness to complete a Lion Queen Personality Quiz in a terminal emulator.
+
+*** Installation
+1. Clone this repo. =git clone https://www.github.com/abbreviatedman/lion-queen-personality-quiz=
+2. Navigate into the =lion-queen-personality-quiz= directory.
+3. Run =npm install=.
+
+*** Starting The Quiz
+Run =node index.js=.
