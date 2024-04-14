@@ -5,35 +5,40 @@ const characters = {
     id: 0,
     displayName: "Nala",
     color: colors.red,
-    description: "You're Nala! You're kind, loyal, fun to hang out with, and always fight for your loved ones and what you believe in. But sometimes you should just relax and hang back.",
+    description:
+      "You're Nala! You're kind, loyal, fun to hang out with, and always fight for your loved ones and what you believe in. But sometimes you should just relax and hang back.",
   },
 
   BLUMPY: {
     id: 1,
     displayName: "Blumpy",
     color: colors.bold.blue,
-    description: "You're Blumpy! You're silly and funny and very fun. You like to pretend to be foolish, like a big goofball, but you take things seriously when you need to.",
+    description:
+      "You're Blumpy! You're silly and funny and very fun. You like to pretend to be foolish, like a big goofball, but you take things seriously when you need to.",
   },
 
   SIRES: {
     id: 2,
     displayName: "Sires",
     color: colors.bold.grey,
-    description: "You're Sires! You're loyal and kind and you fight when you're needed, but prefer to relax. You're persistent and would do anything for the people you love.",
+    description:
+      "You're Sires! You're loyal and kind and you fight when you're needed, but prefer to relax. You're persistent and would do anything for the people you love.",
   },
 
   SARABI: {
     id: 3,
     displayName: "Sarabi",
     color: colors.bold.yellow,
-    description: "You're Sarabi! You're in charge of a lot between work and family, but you take things easy when you get a chance. And you fight when your people need you.",
+    description:
+      "You're Sarabi! You're in charge of a lot between work and family, but you take things easy when you get a chance. And you fight when your people need you.",
   },
 
   KAREN: {
     id: 4,
     displayName: "Karen",
     color: colors.bold.green,
-    description: "You're Karen! You're kind and loving, and you take care of everyone no matter how challenging it becomes. You depend on people and are persistent.",
+    description:
+      "You're Karen! You're kind and loving, and you take care of everyone no matter how challenging it becomes. You depend on people and are persistent.",
   },
 };
 
