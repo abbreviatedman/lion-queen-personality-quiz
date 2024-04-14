@@ -1,34 +1,34 @@
 const colors = require("@colors/colors/safe");
 
-const turtles = {
-  ALICE: {
+const characters = {
+  NALA: {
     id: 0,
-    displayName: "Alice",
-    color: colors.magenta,
+    displayName: "Nala",
+    color: colors.red,
   },
 
-  DONATELLO: {
+  BLUMPY: {
     id: 1,
-    displayName: "Donatello",
-    color: colors.bold.brightMagenta,
-  },
-
-  LEONARDO: {
-    id: 2,
-    displayName: "Leonardo",
+    displayName: "Blumpy",
     color: colors.bold.blue,
   },
 
-  MICHAELANGELO: {
+  SIRES: {
+    id: 2,
+    displayName: "Sires",
+    color: colors.bold.grey,
+  },
+
+  SARABI: {
     id: 3,
-    displayName: "Michaelangelo",
+    displayName: "Sarabi",
     color: colors.bold.yellow,
   },
 
-  RAPHAEL: {
+  KAREN: {
     id: 4,
-    displayName: "Raphael",
-    color: colors.bold.red,
+    displayName: "Karen",
+    color: colors.bold.green,
   },
 };
 
@@ -37,74 +37,49 @@ const questions = [
     text: "What is your favorite color?",
     answers: [
       {
-        text: "Orange",
-        turtle: turtles.MICHAELANGELO,
+        text: "Yellow",
+        character: characters.SARABI,
       },
       {
-        text: "Red",
-        turtle: turtles.RAPHAEL,
+        text: "Green",
+        character: characters.KAREN,
+      },
+      {
+        text: "Grey",
+        character: characters.SIRES,
       },
       {
         text: "Blue",
-        turtle: turtles.LEONARDO,
+        character: characters.BLUMPY,
       },
       {
-        text: "Purple",
-        turtle: turtles.DONATELLO,
-      },
-      {
-        text: "Pink",
-        turtle: turtles.ALICE,
+        text: "Red",
+        character: characters.NALA,
       },
     ],
   },
   {
-    text: "If you had a pet, what would it be?",
+    text: "If you could go on vacation anywhere, where would you go?",
     answers: [
       {
-        text: "Horse",
-        turtle: turtles.LEONARDO,
+        text: "Staycation",
+        character: characters.SIRES,
       },
       {
-        text: "Cat",
-        turtle: turtles.RAPHAEL,
+        text: "Tropical Island",
+        character: characters.KAREN,
       },
       {
-        text: "Turtle",
-        turtle: turtles.DONATELLO,
+        text: "Disney Land",
+        character: characters.BLUMPY,
       },
       {
-        text: "Parrot",
-        turtle: turtles.MICHAELANGELO,
+        text: "Local Beach",
+        character: characters.SARABI,
       },
       {
-        text: "Dog",
-        turtle: turtles.ALICE,
-      },
-    ],
-  },
-  {
-    text: "If you could go anywhere on vacation, where would you go?",
-    answers: [
-      {
-        text: "Sightseeing in Japan.",
-        turtle: turtles.LEONARDO,
-      },
-      {
-        text: "Going to the Maker's Fair in San Francisco.",
-        turtle: turtles.DONATELLO,
-      },
-      {
-        text: "Going to the ferry coaster in Staten Island.",
-        turtle: turtles.ALICE,
-      },
-      {
-        text: "Surfing in Hawaii.",
-        turtle: turtles.MICHAELANGELO,
-      },
-      {
-        text: "I hate vacation!",
-        turtle: turtles.RAPHAEL,
+        text: "Escape Room",
+        character: characters.NALA,
       },
     ],
   },
@@ -112,24 +87,49 @@ const questions = [
     text: "If you were a car, what kind would you be?",
     answers: [
       {
-        text: "a giant, tricked-out van",
-        turtle: turtles.DONATELLO,
+        text: "A jeep.",
+        character: characters.SIRES,
       },
       {
-        text: "a muscle car",
-        turtle: turtles.MICHAELANGELO,
+        text: "A limousine.",
+        character: characters.BLUMPY,
       },
       {
-        text: "a Volkswagen Beetle",
-        turtle: turtles.RAPHAEL,
+        text: "An 18-wheeler.",
+        character: characters.NALA,
       },
       {
-        text: "a sensible four-door sedan",
-        turtle: turtles.LEONARDO,
+        text: "A royal race car.",
+        character: characters.SARABI,
       },
       {
-        text: "A clean purple car",
-        turtle: turtles.ALICE,
+        text: "A minivan.",
+        character: characters.KAREN,
+      },
+    ],
+  },
+  {
+    text: "If you could have any superpower, what would it be?",
+    answers: [
+      {
+        text: "Flight.",
+        character: characters.BLUMPY,
+      },
+      {
+        text: "Super speed.",
+        character: characters.SARABI,
+      },
+      {
+        text: "Teleportation.",
+        character: characters.KAREN,
+      },
+      {
+        text: "Healing.",
+        character: characters.SIRES,
+      },
+      {
+        text: "Super strength.",
+        character: characters.NALA,
       },
     ],
   },
@@ -138,23 +138,23 @@ const questions = [
     answers: [
       {
         text: "Make fun of its looks.",
-        turtle: turtles.MICHAELANGELO,
+        character: characters.SARABI,
       },
       {
         text: "Keep your distance until the team arrives.",
-        turtle: turtles.DONATELLO,
+        character: characters.BLUMPY,
       },
       {
         text: "Attack it immediately.",
-        turtle: turtles.RAPHAEL,
+        character: characters.KAREN,
       },
       {
         text: "Sneak up to them, knock them over, and jump on them.",
-        turtle: turtles.ALICE,
+        character: characters.NALA,
       },
       {
         text: "Plan your battle strategy.",
-        turtle: turtles.LEONARDO,
+        turtle: characters.SIRES,
       },
     ],
   },
@@ -163,26 +163,26 @@ const questions = [
     answers: [
       {
         text: "Getting to learn strategies and tactics.",
-        turtle: turtles.LEONARDO,
+        turtle: characters.SIRES,
       },
       {
         text: "Beating all your brothers in combat.",
-        turtle: turtles.RAPHAEL,
+        turtle: characters.KAREN,
       },
       {
         text: "Practicing your ninja moves.",
-        turtle: turtles.ALICE,
+        turtle: characters.NALA,
       },
       {
         text: "Jumping all around the dojo.",
-        turtle: turtles.MICHAELANGELO,
+        turtle: characters.SARABI,
       },
       {
         text: "I'd actually rather be working in the lab.",
-        turtle: turtles.DONATELLO,
+        turtle: characters.BLUMPY,
       },
     ],
   },
 ];
 
-module.exports = { questions, turtles };
+module.exports = { questions, turtles: characters };
