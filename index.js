@@ -1,7 +1,7 @@
 const prompt = require("prompt");
 const colors = require("@colors/colors/safe");
 
-const { questions, turtles } = require("./data");
+const { questions, characters } = require("./data");
 
 const responses = [];
 prompt.message = "";
@@ -43,13 +43,13 @@ const ask = async (i) => {
       .join("\n") +
     "\n\n";
 
-  const numTurtles = Object.keys(turtles).length;
+  const numCharacters = Object.keys(characters).length;
   const validator = new RegExp(
     "(?=.{1," +
-      numTurtles.toString().length +
+      numCharacters.toString().length +
       "}$)" +
       "^[1-" +
-      (numTurtles < 10 ? numTurtles : 9) +
+      (numCharacters < 10 ? numCharacters : 9) +
       "]$"
   );
 
@@ -57,7 +57,7 @@ const ask = async (i) => {
     name: "response",
     message: questionText,
     warning: colors.red.bold(
-      `\n\n\nPLEASE ENTER A NUMBER BETWEEN 1 AND ${numTurtles}!`
+      `\n\n\nPLEASE ENTER A NUMBER BETWEEN 1 AND ${numCharacters}!`
     ),
 
     validator,
@@ -68,29 +68,31 @@ const ask = async (i) => {
 };
 
 const finishQuiz = () => {
-  let currentTurtle;
+  let currentCharacter;
   let max = 0;
   const scores = {};
   responses.forEach((response, i) => {
-    const { turtle } = questions[i].answers.find(
+    const { character } = questions[i].answers.find(
       (_, i) => Number(response) === i + 1
     );
 
-    if (turtle.id in scores) {
-      scores[turtle.id]++;
+    if (character.id in scores) {
+      scores[character.id]++;
     } else {
-      scores[turtle.id] = 1;
+      scores[character.id] = 1;
     }
 
-    if (scores[turtle.id] > max) {
-      currentTurtle = turtle;
-      max = scores[turtle.id];
+    if (scores[character.id] > max) {
+      currentCharacter = character;
+      max = scores[character.id];
     }
   });
 
-  console.log(
-    "\n" + `Your turtle is: ${currentTurtle.color(currentTurtle.displayName)}!`
-  );
+  console.log("\n" + currentCharacter.description);
 };
+
+console.log(
+  "Have you ever wondered which Lion Queen character you are? We're here to help you find if you're a silly Blue Jay or a calm lioness.\n\nGood luck!"
+);
 
 ask(0);

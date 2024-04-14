@@ -5,30 +5,35 @@ const characters = {
     id: 0,
     displayName: "Nala",
     color: colors.red,
+    description: "You're Nala! You're kind, loyal, fun to hang out with, and always fight for your loved ones and what you believe in. But sometimes you should just relax and hang back.",
   },
 
   BLUMPY: {
     id: 1,
     displayName: "Blumpy",
     color: colors.bold.blue,
+    description: "You're Blumpy! You're silly and funny and very fun. You like to pretend to be foolish, like a big goofball, but you take things seriously when you need to.",
   },
 
   SIRES: {
     id: 2,
     displayName: "Sires",
     color: colors.bold.grey,
+    description: "You're Sires! You're loyal and kind and you fight when you're needed, but prefer to relax. You're persistent and would do anything for the people you love.",
   },
 
   SARABI: {
     id: 3,
     displayName: "Sarabi",
     color: colors.bold.yellow,
+    description: "You're Sarabi! You're in charge of a lot between work and family, but you take things easy when you get a chance. And you fight when your people need you.",
   },
 
   KAREN: {
     id: 4,
     displayName: "Karen",
     color: colors.bold.green,
+    description: "You're Karen! You're kind and loving, and you take care of everyone no matter how challenging it becomes. You depend on people and are persistent.",
   },
 };
 
@@ -134,55 +139,80 @@ const questions = [
     ],
   },
   {
-    text: "When you meet an enemy, you:",
+    text: "What's your favorite Disney song?",
     answers: [
       {
-        text: "Make fun of its looks.",
+        text: "At Last I See The Light.",
         character: characters.SARABI,
       },
       {
-        text: "Keep your distance until the team arrives.",
+        text: "When Will My Life Begin (Reprise).",
         character: characters.BLUMPY,
       },
       {
-        text: "Attack it immediately.",
+        text: "Let It Go.",
         character: characters.KAREN,
       },
       {
-        text: "Sneak up to them, knock them over, and jump on them.",
+        text: "One Jump.",
         character: characters.NALA,
       },
       {
-        text: "Plan your battle strategy.",
-        turtle: characters.SIRES,
+        text: "Part Of Your World.",
+        character: characters.SIRES,
       },
     ],
   },
   {
-    text: "Your favorite part of training is:",
+    text: "Your favorite food is:",
     answers: [
       {
-        text: "Getting to learn strategies and tactics.",
-        turtle: characters.SIRES,
+        text: "French Fries.",
+        character: characters.SIRES,
       },
       {
-        text: "Beating all your brothers in combat.",
-        turtle: characters.KAREN,
+        text: "Turkey.",
+        character: characters.KAREN,
       },
       {
-        text: "Practicing your ninja moves.",
-        turtle: characters.NALA,
+        text: "Apple Pie.",
+        character: characters.NALA,
       },
       {
-        text: "Jumping all around the dojo.",
-        turtle: characters.SARABI,
+        text: "Ham.",
+        character: characters.SARABI,
       },
       {
-        text: "I'd actually rather be working in the lab.",
-        turtle: characters.BLUMPY,
+        text: "Watermelon.",
+        character: characters.BLUMPY,
+      },
+    ],
+  },
+  {
+    text: "What is your favorite rainy-day activity?",
+    answers: [
+      {
+        text: "Play with my favorite toys.",
+        character: characters.SIRES,
+      },
+      {
+        text: "Organizing an indoor picnic for your family.",
+        character: characters.KAREN,
+      },
+      {
+        text: "Explore different parts of your home than usual.",
+        character: characters.NALA,
+      },
+      {
+        text: "Plan out tomorrow.",
+        character: characters.SARABI,
+      },
+      {
+        text: "Find fun places to jump off of around your home.",
+        character: characters.BLUMPY,
       },
     ],
   },
 ];
 
-module.exports = { questions, turtles: characters };
+module.exports = { questions, characters };
