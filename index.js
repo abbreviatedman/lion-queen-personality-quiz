@@ -88,7 +88,12 @@ const finishQuiz = () => {
     }
   });
 
-  console.log("\n" + currentCharacter.description);
+  console.log(
+    "\nYou're " +
+      currentCharacter.color(currentCharacter.displayName) +
+      "! " +
+      currentCharacter.description
+  );
 };
 
 console.log(
