@@ -47,23 +47,23 @@ const questions = [
     text: "What is your favorite color?",
     answers: [
       {
-        text: "Yellow",
+        text: "Yellow.",
         character: characters.SARABI,
       },
       {
-        text: "Green",
+        text: "Green.",
         character: characters.KAREN,
       },
       {
-        text: "Grey",
+        text: "Grey.",
         character: characters.SIRES,
       },
       {
-        text: "Blue",
+        text: "Blue.",
         character: characters.BLUMPY,
       },
       {
-        text: "Red",
+        text: "Red.",
         character: characters.NALA,
       },
     ],
@@ -72,23 +72,23 @@ const questions = [
     text: "If you could go on vacation anywhere, where would you go?",
     answers: [
       {
-        text: "Staycation",
+        text: "Staycation.",
         character: characters.SIRES,
       },
       {
-        text: "Tropical Island",
+        text: "Tropical Island.",
         character: characters.KAREN,
       },
       {
-        text: "Disney Land",
+        text: "Disney Land.",
         character: characters.BLUMPY,
       },
       {
-        text: "Local Beach",
+        text: "Local Beach.",
         character: characters.SARABI,
       },
       {
-        text: "Escape Room",
+        text: "Escape Room.",
         character: characters.NALA,
       },
     ],
@@ -197,23 +197,23 @@ const questions = [
     text: "What is your favorite rainy-day activity?",
     answers: [
       {
-        text: "Play with my favorite toys.",
+        text: "Playing with my favorite toys.",
         character: characters.SIRES,
       },
       {
-        text: "Organizing an indoor picnic for your family.",
+        text: "Organizing an indoor picnic for my family.",
         character: characters.KAREN,
       },
       {
-        text: "Explore different parts of your home than usual.",
+        text: "Exploring different parts of my home than usual.",
         character: characters.NALA,
       },
       {
-        text: "Plan out tomorrow.",
+        text: "Planning out tomorrow.",
         character: characters.SARABI,
       },
       {
-        text: "Find fun places to jump off of around your home.",
+        text: "Finding fun places to jump off of around my home.",
         character: characters.BLUMPY,
       },
     ],
